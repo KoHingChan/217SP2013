@@ -1,0 +1,15 @@
+5 awesome Javascript websites.
+
+1. http://www.pikaboo.be/
+It is a javabased website for an animation company.
+2. http://baroque.me/
+Awesome cello concerto made with javascript.
+3. http://color.method.ac/
+A fun color matching game made with javascript.
+4. http://www.chromeweblab.com/
+Awesome interactive hub with lots of people involved in silly experiments.
+5. http://currantcat.com/convergence/
+Fun little javascript game about meeting two people in love.
+
+I would like to make something similar to an interactive website where people can go in and move things around.
+However, what I think I can make would be silly moving pictures.
