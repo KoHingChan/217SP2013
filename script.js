@@ -1,1 +1,1 @@
-placeholder
+alert("Hello, world.");
