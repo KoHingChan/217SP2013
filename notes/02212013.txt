@@ -1,0 +1,25 @@
+prototypes are just like the classes in javascript so you can reuse certain parts to different solutions.
+
+an object in java is everything that is a certain item, all reserved words etc., data with properties and methods.
+
+remember 5 design patterns, and what the design patterns are used for.
+
+design patterns are known solutions to specific problems.
+
+Today's material is important, I guess.
+
+Flyweights.  There is a shared coffee and flavors get added afterwards.  So basically just in time objects.
+
+Decorators are creating an object and ends up being an object.  Flyweights are more dynamic.
+
+*event bindings?*
+
+Duck punching is a technique to add a method to an existing class or object at run time.  Function object and can have a prototype and its methods are stored in the prototype
+then you can add methods to the function to whatever you do, and when you implement the method into the function and can be available later down in the program.
+
+Function.prototype.implementsFor  is like a contract to say what types of objects and methods need to be in it.  Implements are a predefining about what type of methods and objects it needs
+to have in order to be called as such.
+
+Don't instantiate repeated objects.
+
+Sorta like a master pattern.

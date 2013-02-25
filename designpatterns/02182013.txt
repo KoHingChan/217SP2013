@@ -1,0 +1,21 @@
+Constructor pattern: Creates objects with properties
+
+Module: Private and Public object stuff.
+
+Revealing Module: 
+
+Singleton:  Enforces the creation of one and only one object (needs global scope because it needs to be aware that object doesn't exist in another place)
+
+Observer: Observes and sends a message out.  It moves through lists and objects in order to see what happens where and reports it.
+
+Mediator: 
+
+PubSub: The way that most distributed system uses the publish/subscribed pattern in their system.  (i.e. dropbox, social network, etc.) There is a publisher and then the publisher has
+subscribers and it does not know anything about its subscriber and it just pushes out information.  This is good to generalize different aspects into a general area to provide content for
+anyone.
+
+Facade Pattern:  simplestuff
+
+Factory Pattern:  Pumps out objects.
+
+Decorator Pattern: This makes stuff more useful.  

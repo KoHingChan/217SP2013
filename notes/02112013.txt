@@ -1,0 +1,68 @@
+Factory Design Patterns
+
+These things create objects in a systematic way in which anyone can follow it due to a 
+common language shared.
+
+1. creational design patterns
+2. structural design patterns
+3. behavioral design patterns
+
+Let the if statements and one has if car make car, and if motorcycle makes motorcycle.
+
+However, the functions could be combined to have the factory pattern is outside and as the
+data comes in the factory translates it in order to see which one do you want, i.e.
+motorcycle or the car.
+
+These different ways to creates levels of productivity in which consolidation increases
+efficiency.
+
+However, in design it wouldn't really matter.
+
+Sometimes the factory needs to be ripped apart to put in the factory building another
+thing.  However, that's where structure comes in.  With the ability to create from the old
+model in order to create a new function of a similar task would be great.  However,
+sometimes a new separate factory must be created in order to create without breaking the
+other factory.
+
+Reduce the amount of if statements because of those conditions.
+
+You type in amazon.com blah blah blah blah or something.
+
+Goes to the web server.
+
+Inside the URL there are several parameters.  i.e. directory paths.
+
+How did you have if statements for directories that might not even exist?
+
+That's why you should avoid them because if they don't know this that the other thing.
+
+What is happening is that when the request goes in, one or more of the parameters that's
+being passed is substantiating the object being used in that one pass.
+
+Making a blog, there are two things that creates pages and displays articles.
+
+The request goes in, and goes first to the router.  The router decides to create the page
+or if he's looking for a blog article then substantiate the article object.  Then the rest
+of the parameters are fed into the page of the blog and bam, there you have it.
+
+Two ways of making the program.
+
+One way is not even making if statements.  Parameter coming in new name of parameter.
+Dollar obj = new something blah blah parameter.
+
+What happens is you don't have to keep fixed variable names because they are constantly
+being created.
+
+The idea is what to try to do when writing programs is to rather than having a fixed
+process it is more fluid and reacts to what is given.  (interactive)
+
+Reflection in javascript.
+
+What reflection is it allows you to determine the properties of an object as if looking in
+the mirror.
+
+Determine the request with the fewest amount of if statements.
+
+Maybe using booleans rather than actual object objects.
+
+
