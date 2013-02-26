@@ -2,18 +2,85 @@
 
 <head>
 
-<title>Simple Page</title>
+<title>Design Patterns</title>
 
 </head>
 
 <body>
 
 
-<h1 id="mainHeading">Interesting Headline</h1>
+<h1 id="mainHeading">Design Patterns</h1>
+<h2>There is a singleton<html>
 
-<p>This is a very simple HTML page.</p>
+<head>
 
-<script src="script.js"></script>
+<title>Design Patterns</title>
+
+</head>
+
+<body>
+
+
+<h1 id="mainHeading">Design Patterns</h1>
+<h2>There is a singleton pattern going on in the console.</h2>
+
+<h4>What are Design Patterns?</h4>
+
+<p>Design patterns are known solutions to common problems that most programmers may have while trying to create programs.  They also are structured in a way in which any programmer could look at it and know what function it serves and how the logic works.</p>
+
+<h4>Each Design Pattern's Purpose</h4>
+<p>The <b>Creator Pattern</b> makes objects once there is memory allocated to it.  This generally makes objects with properties assigned to it through the pattern.  Since everything in Javascript is an object, this is an important design pattern in order to add more objects with certain properties.</p>
+<p>The <b>Module Pattern</b> makes private and public allocations of certain methods, variables, and object in order to keep everything neat and orderly.  This type of pattern moves existing items into certain discrete classes in order to reduce chances that certain functions have the same name even though they do different things.</p>
+<p>The <b>Revealing Module Pattern</b> is the more improved version of the module pattern.  Heilmann did not like the fact that he had to repeat the names of the objects when he wanted to call a function using public variables or methods.  Also, the module pattern needed to always use object literal notation every time he wanted something public.  In the improved pattern, he set every function to private which would return anonymous object which uncovers the private functions which we want to make public.  This is used in place of the module pattern to ensure privacy but allow easier access to make certain things public.</p>
+<p>The <b>Singleton Pattern</b> assigns a class strictly to only one object.  This type of pattern assigns a class and if there is already a class that exists it instead calls back to the object.</p>
+<p>The <b>Observer Pattern</b> is a type of design pattern that keeps track of changes to an existing list or set of items.  When there is a change the pattern will, if prompted, notify the users using that pattern.  If an observer no longer wants to be notified they must remove themselves.  This is used when one would like to notify a set of users but with no restraint or input of the observers except for not observing any longer.</p>
+<p>The <b>Publication/Subscription Pattern</b> is different than the observer pattern.  The PubSub Pattern instead allows for subscribers to choose certain topics that it wants from the publisher by having the subscriber present it with a set of arguments.  This pattern is typically used to distribute objects in a way that the publisher does not have to directly answer to its subscribers.</p>
+<p>The <b>Mediator Pattern</b> is a behavioral design pattern which manages the flow between publisher and subscriber.  This pattern strictly moves all the objects through a central point, the mediator pattern itself, in order to manage the object accordingly.</p>
+<p>The <b>Prototype Pattern</b> is a pattern which creates objects branching from existing objects.  This can be used to effectively input a certain task into a program without having to write it over again or modify the original.  This can be an effective way to duckpunch (i.e. Monkey Patch) an existing program.</p>
+<p>The <b>Command Pattern</b> is basically a controller that allows you to implement operations, call methods, and process requests all in one single object.  This is useful to work with many different concrete classes as they are effective in swapping them out when needed.  This allows for the responsibilities to be shifted from the ones making the commands to the ones processing the commands in a clean way.</p>
+<p>The <b>Facade Pattern</b> is used to show something in place of the real something, whether it be an process, description, or any object.  They are a structural pattern designed for the inputs to go through a much simpler interface such as the facade rather than dealing with all the mess in the background.  It's just like having a remote that has certain buttons that do certain things.  However, the button are just triggers for a more complex map of electronics which carry out multiple processes.</p>
+<p>The <b>Factory Pattern</b> is designed to create objects.  It doesn't exactly require us to use a constructor because it mocks up an interface to which certain parameters can be input in order to create a certain object.  This is very useful since everything in JavaScript is an object and for when it is imperative to continually create different objects based on external input.</p>
+<p>The <b>Mixin Pattern</b> is used to collect aspects of functionality so that it can be applied to other areas.  This patterns makes use of prototypes to add bits of compatibility and functionality to different existing functions.  This allows functions to be tweaked to different uses and is useful for when you have relevant functions to a specific problem but you want them to be fully compatible with the problem at hand, such as if you had a program specifically for apples but now you want it for oranges, you can add the prototype to slighty modify the old apple program for an orange program.</p>
+<p>The <b>Decorator Pattern</b> is a structural design pattern which is geared towards reusing code.  Like the Mixin pattern, this can minimize the use of sub-classing.  This pattern allows us to modify the properties of objects without heavily modifying the code of which they are consisted.  This is useful for adding specific properties to multiple items of different types such as objects and processes in a game.</p>
+<p>The <b>Flyweight Pattern</b> is a structural solution to optimize inefficient sharing of data by making a program share as much data as possible when possible.  This is useful when working with multiple programs that call from multiple libraries or dictionaries of information.</p>
+
+
+
+<p>A programmer makes a script to write "Hello, World." into the document.</p>
+<p>When it runs, it returns, "Who's there?"</p>
+<script src="factory1.js"></script>
+
+
+</body>
+
+</html>
+ pattern going on in the console.</h2>
+
+<h4>What are Design Patterns?</h4>
+
+<p>Design patterns are known solutions to common problems that most programmers may have while trying to create programs.  They also are structured in a way in which any programmer could look at it and know what function it serves and how the logic works.</p>
+
+<h4>Each Design Pattern's Purpose</h4>
+<p>The Creator Pattern makes objects once there is memory allocated to it.  This generally makes objects with properties assigned to it through the pattern.  Since everything in Javascript is an object, this is an important design pattern in order to add more objects with certain properties.</p>
+<p>The Module Pattern makes private and public allocations of certain methods, variables, and object in order to keep everything neat and orderly.  This type of pattern moves existing items into certain discrete classes in order to reduce chances that certain functions have the same name even though they do different things.</p>
+<p>The Revealing Module Pattern is the more improved version of the module pattern.  Heilmann did not like the fact that he had to repeat the names of the objects when he wanted to call a function using public variables or methods.  Also, the module pattern needed to always use object literal notation every time he wanted something public.  In the improved pattern, he set every function to private which would return anonymous object which uncovers the private functions which we want to make public.  This is used in place of the module pattern to ensure privacy but allow easier access to make certain things public.</p>
+<p>The Singleton Pattern assigns a class strictly to only one object.  This type of pattern assigns a class and if there is already a class that exists it instead calls back to the object.</p>
+<p>The Observer Pattern is a type of design pattern that keeps track of changes to an existing list or set of items.  When there is a change the pattern will, if prompted, notify the users using that pattern.  If an observer no longer wants to be notified they must remove themselves.  This is used when one would like to notify a set of users but with no restraint or input of the observers except for not observing any longer.</p>
+<p>The Publication/Subscription Pattern is different than the observer pattern.  The PubSub Pattern instead allows for subscribers to choose certain topics that it wants from the publisher by having the subscriber present it with a set of arguments.  This pattern is typically used to distribute objects in a way that the publisher does not have to directly answer to its subscribers.</p>
+<p>The Mediator Pattern is a behavioral design pattern which manages the flow between publisher and subscriber.  This pattern strictly moves all the objects through a central point, the mediator pattern itself, in order to manage the object accordingly.</p>
+<p>The Prototype Pattern is a pattern which creates objects branching from existing objects.  This can be used to effectively input a certain task into a program without having to write it over again or modify the original.  This can be an effective way to duckpunch (i.e. Monkey Patch) an existing program.</p>
+<p>The Command Pattern is basically a controller that allows you to implement operations, call methods, and process requests all in one single object.  This is useful to work with many different concrete classes as they are effective in swapping them out when needed.  This allows for the responsibilities to be shifted from the ones making the commands to the ones processing the commands in a clean way.</p>
+<p>The Facade Pattern is used to show something in place of the real something, whether it be an process, description, or any object.  They are a structural pattern designed for the inputs to go through a much simpler interface such as the facade rather than dealing with all the mess in the background.  It's just like having a remote that has certain buttons that do certain things.  However, the button are just triggers for a more complex map of electronics which carry out multiple processes.</p>
+<p>The Factory Pattern is designed to create objects.  It doesn't exactly require us to use a constructor because it mocks up an interface to which certain parameters can be input in order to create a certain object.  This is very useful since everything in JavaScript is an object and for when it is imperative to continually create different objects based on external input.</p>
+<p>The Mixin Pattern is used to collect aspects of functionality so that it can be applied to other areas.  This patterns makes use of prototypes to add bits of compatibility and functionality to different existing functions.  This allows functions to be tweaked to different uses and is useful for when you have relevant functions to a specific problem but you want them to be fully compatible with the problem at hand, such as if you had a program specifically for apples but now you want it for oranges, you can add the prototype to slighty modify the old apple program for an orange program.</p>
+<p>The Decorator Pattern is a structural design pattern which is geared towards reusing code.  Like the Mixin pattern, this can minimize the use of sub-classing.  This pattern allows us to modify the properties of objects without heavily modifying the code of which they are consisted.  This is useful for adding specific properties to multiple items of different types such as objects and processes in a game.</p>
+<p>The Flyweight Pattern is a structural solution to optimize inefficient sharing of data by making a program share as much data as possible when possible.  This is useful when working with multiple programs that call from multiple libraries or dictionaries of information.</p>
+
+
+
+<p>A programmer makes a script to write "Hello, World." into the document.</p>
+<p>When it runs, it returns, "Who's there?"</p>
+<script src="factory1.js"></script>
 
 
 </body>
