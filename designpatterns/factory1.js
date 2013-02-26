@@ -40,3 +40,6 @@ console.log( firstmeal instanceof sandwich);
 
 console.log( firstmeal );
 
+var headline = document.getElementById("hereyago");
+
+headline.innerHTML = console.info(sandwich)
