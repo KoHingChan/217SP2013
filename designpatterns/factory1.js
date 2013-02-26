@@ -42,4 +42,4 @@ console.log( firstmeal );
 
 var headline = document.getElementById("hereyago");
 
-headline.innerHTML = console.info(sandwich)
+headline.innerHTML = firstmeal;
