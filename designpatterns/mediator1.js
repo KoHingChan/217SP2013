@@ -13,7 +13,7 @@ var mediator = (function(){
         if (!magazines[article] ){
             return false;
         } 
-        pirate = Array.prototype.slice.call( arguments, 1 );
+        pirate = Array.prototype.slice.call( things, 1 );
         for ( var i = 0, l = magazines[article].length; i<l; i++ ) {
             var subscription = magazines[article][i];
             subscription.callback.apply( subscription.context, pirate );
