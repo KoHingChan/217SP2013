@@ -2,12 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Creating Automatic Bookmarks</title>
-    <script type="text/javascript" src="../jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
     <script type="text/javascript">
         $("document").ready(function() {
             buildBookmarks('h3', 'header');
         });
+
         function buildBookmarks(strWhichTag, sBookMarkNode) {
+            var i;
+            var cAnchorCount = 0;
+            var oList = $("<ul id='bookmarksList'></ul>");
+            $("div:not([id=header]) " +strWhichTag).each(function(){
+                $(this).html("<a name='bookmark" + cAnchorCount + "'></a>" + $(this).html());
+                oList.append($("<li><a href='#bookmark" + cAnchorCount++ + "'> " + $(this).text() + "</a></li>"));
+            });
+            $("#" + sBookMarkNode).append(oList);
         }
     </script>
 </head>
