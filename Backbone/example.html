@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>My first Three.js app</title>
+		<style>canvas { width: 100%; height: 100% }</style>
+	</head>
+	<body>
+		<script src="backbone-min.js"></script>
+		<script src="underscore-min.js"></script>
+		<script src="jquery-1.9.1.min.js"></script>
+		<script src="https://raw.github.com/mrdoob/three.js/master/build/three.js"></script>
+		
+		<button id="add-friend">Add Friend</button>
+		<ul id="friends-list">
+		</ul>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js"></script>
+		<script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+		<script>
+		(function ($) {
+		  
+		Friend = Backbone.Model.extend({
+		name: null
+		});
+		Friends = Backbone.Collection.extend({
+		initialize: function (models, options) {
+		this.bind("add", options.view.addFriendLi);
+		}
+		});
+		
+		AppView = Backbone.View.extend({
+		el: $("body"),
+		initialize: function () {
+		this.friends = new Friends( null, { view: this });
+		},
+		events: {
+		"click #add-friend":  "showPrompt",
+		},
+		showPrompt: function () {
+		var friend_name = prompt("Who is your friend?");
+		var friend_model = new Friend({ name: friend_name });
+		this.friends.add( friend_model );
+		},
+		addFriendLi: function (model) {
+		$("#friends-list").append("<li>" + model.get('name') + "</li>");
+		}
+		});
+		  
+		var appview = new AppView;
+		})(jQuery);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+html{
+    
+}
+
+body{
+    background-color: C2E1E8;
+    color: white;
+    font-family: sans-serif;
+}
+
+#wrapper{
+
+}
+
+#banner{
+    background-color: 58FF78;
+    font-size: 72px;
+    line-height: 50px;
+}
+
+#primarylinks{
+    background-color: 58ACFF;
+}
+
+.horizontalmenu{
+    list-style-type: none;
+    text-align: center;
+    font-variant: small-caps;
+    font-style: oblique;
+}
+
+#leftside{
+    background-color: 58ACFF;
+}
+
+#sbs1{
+    min-height: 560px;
+}
+
+#rightside{
+    background-color: 50E8A0;
+}
+
