@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color: C2E1E8;
+    background-color: rgb(255,209,158);
     color: white;
     font-family: sans-serif;
 }
@@ -13,24 +13,24 @@ body{
 }
 
 #banner{
-    background-color: 58FF78;
-    font-size: 72px;
-    line-height: 50px;
+    background-color: rgb(87,85,74);
+    font-size: 36px/*72px*/;
+    line-height: 40px/*50px*/;
 }
 
 #primarylinks{
-    background-color: 58ACFF;
+    background-color: rgb(102,125,116);
 }
 
 .horizontalmenu{
     list-style-type: none;
     text-align: center;
     font-variant: small-caps;
-    font-style: oblique;
+    font-size: 18px;
 }
 
 #leftside{
-    background-color: 58ACFF;
+    background-color: rgb(132,150,120);
 }
 
 #sbs1{
@@ -38,6 +38,6 @@ body{
 }
 
 #rightside{
-    background-color: 50E8A0;
+    background-color: rgb(199,165,123);
 }
 

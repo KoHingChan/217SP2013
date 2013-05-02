@@ -15,7 +15,7 @@ body{
 
 #banner{
     width: 940px;
-    height: 177px;
+    height: 100px/*177px*/;
     padding: 10px;
     margin-bottom: 8px;
     float: left;
@@ -28,7 +28,7 @@ body{
     height: 40px;
     margin-bottom: 8px;
     -moz-border-radius: 3px;
-    text-align: center;
+    text-align: left;
     border-radius: 3px;
     float: left;
 }
@@ -37,13 +37,12 @@ body{
     display: inline;
     line-height: 40px;
     list-style-type: none;
-    margin-right: 70px;
 }
 
 .horizontalmenu li{
     display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: -30px;
+    margin-right: 100px;
 }
 
 .horizontalmenu a{

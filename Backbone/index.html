@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Backbone</title>
+
+<!--This contains our .js references-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>
+
+<!--Style Sheet for our Website-->
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="layout.css"/>
+
+<script src="apiconnect.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="banner">
+        <p id="bannertext">Backbone Slideshow</p>
+    </div>
+    <div id="primarylinks">
+        <ul class="horizontalmenu">
+            <li><a href = "http://web.njit.edu/~kc99/217SP2013/Backbone/backbone.html">Home</a></li>
+            <li><a href = "http://web.njit.edu/~kc99/217SP2013/Backbone/backbone.html">About</a></li>
+            <li><a href = "http://web.njit.edu/~kc99/217SP2013/Backbone/backbone.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="sbs1">
+        <div id="leftside">
+            <p>Backbone Slideshow</p>
+            <p>Animals and Stuff</p>
+        </div>
+        <div id="rightside">
+            <p>Album</p>
+            
+            <div id = 'slideshow'>
+                <ul class = 'slides'>
+                    <li class = 'toggle-play-pause'></li>
+                </ul>
+            </div>
+            
+            <script src="application.js"></script>
+            <!--<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/0bZs7/embed"></iframe>-->
+             
+            <form>
+                File: <input id="filepic" type="file" name="addfile">
+            </form>
+            <button id="holyshitballs">Nope!</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Disclaimer!</p>
+    </div>
+    
+</div>
+
+</body>
+
+</html>
